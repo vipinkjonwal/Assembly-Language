@@ -1,7 +1,6 @@
 DATA SEGMENT                
-    PACKED      DB  78h,56h,34h,12h,13h,54h,28h,94h
-    UNPACKED    DB  16 DUP(?)   
-    
+    PACKED      DB  78H,56H,34H,12H,13H,54H,28H,94H
+    UNPACKED    DB  16 DUP(?)       
 DATA ENDS
 
 CODE SEGMENT
@@ -29,5 +28,6 @@ CODE SEGMENT
 	    MOV UNPACKED[DI],AL
 	    INC DI
             LOOP NEXT
+
 CODE ENDS  
-    END START
+END START
